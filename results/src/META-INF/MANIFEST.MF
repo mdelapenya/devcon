@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1498117216545
+Bundle-ManifestVersion: 2
+Bundle-Name: WeDeploy Sample Portlet
+Bundle-SymbolicName: com.liferay.wedeploy.samples.portlet
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_45 (Oracle Corporation)
+Import-Package: com.liferay.portal.kernel.portlet.bridges.mvc;version=
+ "[1.0,2)",javax.portlet;version="[2.0,3)",javax.servlet,javax.servlet
+ .http
+Javac-Debug: on
+Javac-Deprecation: off
+Javac-Encoding: UTF-8
+Private-Package: com.liferay.wedeploy.samples.portlet.jsp,content
+Provide-Capability: osgi.service;objectClass:List<String>="javax.portl
+ et.Portlet",liferay.resource.bundle;bundle.symbolic.name="com.liferay
+ .wedeploy.samples.portlet";resource.bundle.base.name="content.Languag
+ e"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=jsp.taglib
+ )(uri=http://java.sun.com/portlet_2_0))",osgi.extender;filter:="(&(os
+ gi.extender=jsp.taglib)(uri=http://liferay.com/tld/aui))",osgi.extend
+ er;filter:="(&(osgi.extender=jsp.taglib)(uri=http://liferay.com/tld/p
+ ortlet))",osgi.extender;filter:="(&(osgi.extender=jsp.taglib)(uri=htt
+ p://liferay.com/tld/theme))",osgi.extender;filter:="(&(osgi.extender=
+ jsp.taglib)(uri=http://liferay.com/tld/ui))",osgi.ee;filter:="(&(osgi
+ .ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.liferay.wedeploy.samples.portlet.jsp.J
+ SPPortlet.xml
+Tool: Bnd-3.2.0.201605172007

@@ -1,0 +1,40 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+group 'io.wedeploy.example'
+version '1.0-SNAPSHOT'
+
+buildscript {
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/release" }
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.7.RELEASE")
+  }
+}
+
+apply plugin: 'java'
+apply plugin: SpringBootPlugin
+
+task run(dependsOn: ':bootRun') {
+    doLast {
+      println 'Boot'
+    }
+}
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven { url "http://repo.spring.io/release" }
+}
+
+dependencies {
+  compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+  compile("com.wedeploy:com.wedeploy.api-java.api:0.0.1")
+  compile("com.wedeploy:com.wedeploy.api-java.api-client:0.0.1")
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '3.5.1'
+}
