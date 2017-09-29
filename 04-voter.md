@@ -1,6 +1,6 @@
 # Voter App
 
-We are going to enahnce the Java service and to make an app of it. It is going to be a voting app, where user can choose if he likes on or the another option. We will need the following endpoints:
+We are going to enhance the Java service and to make an app out of it. It is going to be a voting app, where user can choose if he likes on or the another option. We will need the following endpoints:
 
 + `/voteFor[cat|dog]` - action to vote for a cat or a dog.
 + `/votes` - action that return votes count.
@@ -18,7 +18,7 @@ Let' develop the requirements.
 
 ## WeDeploy API
 
-Since data is remote service, we access it via HTTP. Sure, you can use any HTTP client that you like; but why not try to use our own `WeDeploy.api-java` client? Not only it is a HTTP client, but it has some additional functionalities to make your work with WeDeploy service easy.
+Since data is a remote service, we access it via HTTP. Sure, you can use any HTTP client that you like; but why not try to use our own `WeDeploy.api-java` client? Not only is it a HTTP client, but it has some additional functionalities to make your work easier.
 
 ---
 
@@ -42,11 +42,11 @@ cd voter
 we deploy -p devcon
 ```
 
-Once when service is deployed and online (check the [wedeploy project's page](http://wedeploy.com)), let's check how it works:
+Once our service is deployed (check the [wedeploy project's page](http://wedeploy.com)), let's see how it works live:
 
 ```shell
-open https://voter-devcon.wedeploy.io
-open https://voter-devcon.wedeploy.io/votes.json
+open https://voter-<your_handle>devcon.wedeploy.io
+open https://voter-<your_handle>devcon.wedeploy.io/votes.json
 ```
 
-We deployed a working app :) !!!
+We deployed a working app!!! :)

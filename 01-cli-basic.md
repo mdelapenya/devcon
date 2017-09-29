@@ -8,14 +8,14 @@ If you use a Unix-like system such as macOS or Linux, open your terminal and run
 curl https://cdn.wedeploy.com/cli/latest/wedeploy.sh -sL | bash
 ```
 
-For more details and instructions about installation on other plaforms, check the official documentation: [Using the Command-line](https://wedeploy.com/docs/intro/using-the-command-line/).
+For more details and instructions about installation on other platforms, check the official documentation: [Using the Command-line](https://wedeploy.com/docs/intro/using-the-command-line/).
 
 ## Login from CLI
 
-We must furst tell the CLI who we are. Let's login:
+We must first tell the CLI who we are. Let's login:
 
 ```shell
 we login
 ```
 
-Follow the procedure of logging in. Note that you need to have a confirmed WeDeploy account, otherwise login (and the rest of the workshop) will not work.
+Follow the procedure of logging in. Note that you need to have a confirmed WeDeploy account, otherwise the login (and the rest of the workshop) will not work.

@@ -18,4 +18,4 @@ The difference now is that we specified a predefined WeDeploy service image. As 
 we deploy -p devcon
 ```
 
-Head to the [wedeploy page](http://wedeploy.com) and see how it is being deployed, until it is ready.
+Head to the [wedeploy page](http://wedeploy.com) and see it being deployed.
