@@ -10,7 +10,7 @@ First thing first - we need a project. Go to [wedeploy.com](http://wedeploy.com)
 
 We are going to name the project as: `devcon`.
 
-However, your project name must be unique, so you can not use the very same name. We propose to follow this pattern for naming the project: `devcon-<your_handle>`.
+However, your project name must be unique, so you can not all use the very same name. We propose to follow this pattern for naming the project: `<your_handle>devcon`.
 
 
 ## The First Java service
@@ -28,7 +28,7 @@ To save some time, we already have a boilerplate project ready! Checkout it:
 git clone --depth 1 https://github.com/wedeploy/boilerplate-java.git voter
 ```
 
-Like said above, this is a simple Java project, based on Spring Boot. There is nothing WeDeploy related in it. You can build it and run it like any other java application:
+Like we said above, this is a simple Java project, based on Spring Boot. There is nothing WeDeploy related in it. You can build it and run it like any other Java application:
 
 
 ```bash
@@ -44,7 +44,7 @@ The application should be running at port `8080`. Check it in your browser.
 
 It's time to deploy our Java service!
 
-Edit or add `wedeploy.json` file in the service's folder (`voter`):
+Edit or add a `wedeploy.json` file in the service's folder (`voter`):
 
 
 ```json
@@ -65,4 +65,4 @@ cd voter
 we deploy -p devcon
 ```
 
-Go to [wedeploy.com](http://wedeploy.com) and check what's happening!
+Go to the [WeDeploy Console](http://console.wedeploy.com) and check what's happening!
