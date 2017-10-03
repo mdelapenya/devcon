@@ -8,6 +8,8 @@ If you use a Unix-like system such as macOS or Linux, open your terminal and run
 curl https://cdn.wedeploy.com/cli/latest/wedeploy.sh -sL | bash
 ```
 
+![](gfx/01-we-cli.png)
+
 For more details and instructions about installation on other platforms, check the official documentation: [Using the Command-line](https://wedeploy.com/docs/intro/using-the-command-line/).
 
 ## Login from CLI
@@ -18,4 +20,13 @@ We must first tell the CLI who we are. Let's login:
 we login
 ```
 
-Follow the procedure of logging in. Note that you need to have a confirmed WeDeploy account, otherwise the login (and the rest of the workshop) will not work.
+Follow the procedure of logging in.
+
+![](gfx/01-login.png)
+
+Note that you need to have a confirmed WeDeploy account, otherwise the login (and the rest of the workshop) will not work.
+
+
+---
+
+[continue...](02-the-first-service.md)

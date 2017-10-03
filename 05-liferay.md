@@ -55,4 +55,12 @@ cd results
 we deploy -p devcon
 ```
 
-Done! However, one thing is different now. Liferay needs some initial time to boot that is quite long. So we just need to wait for it to gets up and load our plugin.
+Done!
+
+![](gfx/05-services.png)
+
+However, one thing is different now. Liferay needs some initial time to boot that is quite long. So we just need to wait for it to gets up and load our plugin.
+
+---
+
+[continue...](06-the-end.md)

@@ -10,6 +10,8 @@ First thing first - we need a project. Go to [wedeploy.com](http://wedeploy.com)
 
 We are going to name the project as: `devcon`.
 
+![](gfx/02-empty-project.png)
+
 However, your project name must be unique, so you can not all use the very same name. We propose to follow this pattern for naming the project: `<your_handle>devcon`.
 
 
@@ -37,7 +39,9 @@ cd voter
 ./gradlew run
 ```
 
-The application should be running at port `8080`. Check it in your browser.
+The application should be running at port `8080`. Check it in your [browser](http://localhost:8080):
+
+![](gfx/02-voter.png)
 
 
 ## WeDeployment!
@@ -65,4 +69,12 @@ cd voter
 we deploy -p devcon
 ```
 
+![](gfx/02-voter-build.png)
+
 Go to the [WeDeploy Console](http://console.wedeploy.com) and check what's happening!
+
+![](gfx/02-voter-online.png)
+
+---
+
+[continue...](03-add-the-data.md)
