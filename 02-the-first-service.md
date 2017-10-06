@@ -6,7 +6,7 @@ It's a simple hello-world Spring Boot application.
 
 ## Project creation
 
-First thing first - we need a project. Go to [wedeploy.com](http://wedeploy.com) and add a new project.
+First thing first - we need a project. Go to [wedeploy.com](http://wedeploy.com) and create a new project.
 
 We are going to name the project as: `devcon`.
 
@@ -24,17 +24,19 @@ Let's now prepare a Java service locally. Create a root folder for the project.
 mkdir devcon
 ```
 
-To save some time, we already have a boilerplate project ready! Checkout it:
+To save some time, we already have a boilerplate project ready! Clone this repository and head to `voter` directory:
 
 ```bash
-git clone --depth 1 https://github.com/wedeploy/boilerplate-java.git voter
+git clone --depth 1 https://github.com/wedeploy/devcon
+cd ./devcon/voter
 ```
 
-Like we said above, this is a simple Java project, based on Spring Boot. There is nothing WeDeploy related in it. You can build it and run it like any other Java application:
+Like we said above, this is a simple Java project, based on Spring Boot. There is nothing WeDeploy related in it. 
+
+You can build it and run it like any other Java application:
 
 
 ```bash
-cd voter
 ./gradlew build
 ./gradlew run
 ```
@@ -42,6 +44,8 @@ cd voter
 The application should be running at port `8080`. Check it in your [browser](http://localhost:8080):
 
 ![](gfx/02-voter.png)
+
+Note.: if you already have something running on port `8080` you must close it. To discover if that's the case, run `sudo lsof -i:8080`.
 
 
 ## WeDeployment!
@@ -60,13 +64,13 @@ Edit or add a `wedeploy.json` file in the service's folder (`voter`):
 
 This file is NOT mandatory; we have added it just to get familiar with it. It is used for WeDeploy deployment configurations. In this example, we just set the service name (`id`).
 
-
 Deployment is super easy with the WeDeploy CLI:
 
 
 ```bash
-cd voter
 we deploy -p devcon
+# ps.: at 'devcon/voter'
+# pps.: change `devcon` by the name of your project
 ```
 
 ![](gfx/02-voter-build.png)

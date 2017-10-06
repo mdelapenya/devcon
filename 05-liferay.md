@@ -40,7 +40,7 @@ git clone https://github.com/wedeploy/tutorial-liferay-dxp results
 
 For the purpose of the workshop, we are going to cheat. :) We will just add the JavaScript and HTML code in the jar without rebuilding everything. Unpack the jar to `src` folder and go to `src/META-INF/resources` folder. There is `view.jsp` - the view content of the portlet. This is the place where we're going to add our code.
 
-The code is rather simple. We use the Wedeploy JavaScript API to fetch the data from our data collection. Then we populate the page with the data. Simple as that.
+The code is rather simple. We use the WeDeploy JavaScript API to fetch the data from our data collection. Then we populate the page with the data. Simple as that.
 
 Repack the jar, put it in the `deploy` folder - remember, this is actually the `$LIFERAY_HOME/deploy` folder.
 

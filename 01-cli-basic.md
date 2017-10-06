@@ -1,8 +1,8 @@
 # WeDeploy CLI
 
-The WeDeploy Command-Line Interface is a tool for helping you to use the WeDeploy platform by providing support for things like creating, managing, and scaling applications.
+The WeDeploy Command-Line Interface is a tool for helping you use the WeDeploy platform by providing support for things like creating, managing, and scaling applications.
 
-If you use a Unix-like system such as macOS or Linux, open your terminal and run:
+If you use a Unix-like operating system such as macOS or Linux, open your terminal and run:
 
 ```shell
 curl https://cdn.wedeploy.com/cli/latest/wedeploy.sh -sL | bash
