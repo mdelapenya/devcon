@@ -23,10 +23,16 @@ public class WeDeployController {
         ApiClient.init();
     }
 
-    private final String dbUrl;
+    private String dbUrl;
 
     public WeDeployController() {
-        dbUrl = "https://db-devcon.wedeploy.io";
+        dbUrl = "https://db-devconwebinar.wedeploy.io";
+
+        Map<String, String> env = System.getenv();
+
+        if (env.containsKey("WEDEPLOY_DB_WEBINAR_URL")) {
+            dbUrl = env.get("WEDEPLOY_DB_WEBINAR_URL");
+        }
     }
 
     public static void main(String[] args) {

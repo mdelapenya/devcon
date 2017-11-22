@@ -25,7 +25,7 @@
     define.amd = false;
 </script>
 
-<script src="https://cdn.wedeploy.com/api/2.3.1/wedeploy.js"></script>
+<script src="https://cdn.wedeploy.com/api/4.0.1/wedeploy.js"></script>
 <h1>VOTING RESULTS</h1>
 
 <style type="text/css">
@@ -41,10 +41,19 @@
 <div id="cats" class="result"></div>
 <div id="dogs" class="result"></div>
 
+<%
+String dbUrl = "https://db-devconwebinar.wedeploy.io";
+
+Map<String, String> env = System.getenv();
+
+if (env.containsKey("WEDEPLOY_DB_WEBINAR_URL")) {
+	dbUrl = env.get("WEDEPLOY_DB_WEBINAR_URL");
+}
+%>
 <script>
 document.addEventListener("DOMContentLoaded", function(event) {
 	WeDeploy
-	  .url('https://db-devcon.wedeploy.io/devcon/votes')
+	  .url('<%= dbUrl %>/devcon/votes')
 	  .get()
 	  .then(function(response) {
 	  		body=eval(response.body());
