@@ -1,3 +1,6 @@
 {
-  "id": "voter"
+  "id": "voter",
+  "env": {
+    "WEDEPLOY_DB_WEBINAR_URL": "https://db-devconwebinar.wedeploy.io"
+  }
 }
