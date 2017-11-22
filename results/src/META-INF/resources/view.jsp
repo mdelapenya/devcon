@@ -25,7 +25,7 @@
     define.amd = false;
 </script>
 
-<script src="https://cdn.wedeploy.com/api/2.3.1/wedeploy.js"></script>
+<script src="https://cdn.wedeploy.com/api/4.0.1/wedeploy.js"></script>
 <h1>VOTING RESULTS</h1>
 
 <style type="text/css">
