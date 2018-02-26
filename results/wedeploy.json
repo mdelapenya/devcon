@@ -1,10 +1,10 @@
 {
 	"id": "results",
-	"image": "wedeploy/liferay:dxp-sp5-20171018",
+	"image": "wedeploy/liferay:dxp-sp6-20180220",
 	"memory": 4096,
 	"cpu": 3,
 	"volume": "/opt/liferay",
 	"env": {
-		"WEDEPLOY_DB_WEBINAR_URL": "https://db-devconwebinar.wedeploy.io"
+		"WEDEPLOY_DB_WEBINAR_URL": "https://db-devcon.wedeploy.io"
 	}
 }
